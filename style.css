@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 32px 16px;
+    padding: 32px;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 1.8;
+
+}
+
+.heading {
+font-family: 'carter one', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+
+}
+
