@@ -2,7 +2,6 @@
 require __DIR__ . '/data.php';
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,8 +22,3 @@ require __DIR__ . '/data.php';
 </header>
 
 <body>
-
-<?php
-
-
-?>
