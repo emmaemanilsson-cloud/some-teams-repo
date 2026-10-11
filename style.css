@@ -1,25 +1,113 @@
+:root {
+--background-color: #FFE0D1;
+--accent-color: #FFB894;
+--border-color: #FFF5F0;
+
+--text-color: #1A1A1A;
+
+--font-size-s: 8px;
+--font-size-m: 16px;
+--font-size-l: 32px;
+--font-size-xl: 48px;
+
+
+}
+
 *{
     box-sizing: border-box;
 }
 
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin: 32px 16px;
-    padding: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: var(--font-size-l);
+    margin: var(--font-size-m);
+}
+
+h1 {
+    font-size: var(--font-size-l);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 32px 48px 32px;
+}
+
+.heading {
+    font-family: 'carter one', sans-serif;
+    font-size: 52px;
+}
+
+.links {
+    display: flex;
+    align-items: flex-start;
+
+    gap: var(--font-size-m);
+    color: var(--text-color);
+   
+    
+
+}
+
+.link {
+    background-color: var(--border-color);
+    padding: 8px 18px;
+    border-radius: var(--font-size-s);
+  
+    border: solid 0.5px;
+  
+
 }
 
 ul {
     list-style-type: none;
-    line-height: 1.8;
+    line-height: 1.9;
+}
+
+
+.teams-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--font-size-xl);
+    max-width: 900px;
+
+    justify-content: center;
+    align-items: flex-start;
 
 }
 
-.heading {
-font-family: 'carter one', sans-serif;
+.team-card {
+    background-color: var(--accent-color);
+    padding: var(--font-size-l);
+    border-radius: var(--font-size-s);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.10);
+    border: solid 2px (var(--border-color));
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.team-card img {
+    align-self: flex-end;
+    margin: var(--font-size-m);
+    text-align: right;
+    margin-top: -80px;
+    
 }
 
 a {
     text-decoration: none;
+    color: var(--text-color);
+    
+}
+
+a:hover {
+    background-color: var(--accent-color);
+    color: var(--border-color);
 }
 
 img {
