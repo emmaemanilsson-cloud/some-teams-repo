@@ -6,26 +6,27 @@ require __DIR__ . '/header.php';
 require __DIR__ . '/data.php';
 ?>
 
-<ul>
-<div class="teams-container">
-    
+    <div class="teams-container">
+
 
         <?php foreach ($teams as $key => $value) : ?>
 
             <div class="team-card">
-                <h1> <?php echo $key ?> </h1>
 
-                <li><?php echo "League: " . ($value['league']) ?></li>
-                <li><?php echo "Ranking: " . ($value['uefa-coefficient-ranking']) ?></li>
-                <li><?php echo "Position: " . ($value['league-position']) ?> </li>
-                <li><?php echo "City: " . ($value['city']) ?> </li>
-                <li><a href="<?php echo ($value['url']) ?>">Website</a></li>
-                <img src="<?php echo $value['logo_uefa']; ?>" alt="<?php echo $key; ?> logo">
+                <a class="team-link" href="<?php echo 'team.php?team=' . $key ?>">
+                    <img src="<?php echo $value['logo_uefa']; ?>"
+                        alt="<?php echo $key; ?> logo">
+                </a>
+
+                <h2><?php echo $key ?></h2>
+
+                <p><?php echo "City: " . $value['city'] ?></p>
+
+                <a href="<?php echo $value['url'] ?>">Website</a>
 
             </div>
         <?php endforeach; ?>
-        </div>
-    </ul>
+    </div>
 
 
 </body>
