@@ -1,12 +1,13 @@
    <?php
     require __DIR__ . '/data.php';
     ?>
-   
+
    <?php
-   /* kollar om det finns en team-parameter i URL */
+    /* kollar om det finns en team-parameter i URL */
     if (isset($_GET['team'])) {
 
         $teamName = $_GET['team'];
+        /* om inte - skicka tillbaka till index */
     } else {
         header('Location: index.php');
         exit;
@@ -25,18 +26,28 @@
     ?>
 
    <article>
-       <ul>
 
-           <?php $team = $teams[$teamName]; ?>
+       <div class="team-profile">
+           <div class="profile-heading">
+               <h2>TEAM PROFILE</h2>
 
-           <h1><?php echo $teamName; ?></h1>
+               <?php $team = $teams[$teamName]; ?>
 
+               <h1><?php echo $teamName; ?></h1>
+               <?php echo "City: " . ($team['city']) ?>
+           </div>
 
-           <li><?php echo "League: " . ($team['league']) ?></li>
-           <li><?php echo "Ranking: " . ($team['uefa-coefficient-ranking']) ?></li>
-           <li><?php echo "Position: " . ($team['league-position']) ?> </li>
-           <li><?php echo "City: " . ($team['city']) ?> </li>
-           <li><a href="<?php echo ($team['url']) ?>">Website</a></li>
-           <img src="<?php echo $team['logo_uefa']; ?>" alt="<?php echo $teamName; ?> logo">
-       </ul>
+           <div class="profile-card">
+               <div class="profile-info">
+                   <?php echo "League: " . ($team['league']) ?>
+                   <?php echo "Ranking: " . ($team['uefa-coefficient-ranking']) ?>
+                   <?php echo "Position: " . ($team['league-position']) ?>
+                   <a href="<?php echo ($team['url']) ?>">Website</a>
+               </div>
+           </div>
+
+           <div class="profile-logo">
+               <img src="<?php echo $team['logo_uefa']; ?>" alt="<?php echo $teamName; ?> logo">
+           </div>
+       </div>
    </article>
