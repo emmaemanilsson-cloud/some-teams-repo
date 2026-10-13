@@ -11,6 +11,11 @@ require __DIR__ . '/data.php';
 
         <?php foreach ($teams as $key => $value) : ?>
 
+             <?php
+                $country = explode('(', $value['league'])[1];
+                $country = str_replace(')', '', $country);
+                ?>
+
             <div class="team-card">
 
                 <a class="team-link" href="<?php echo 'team.php?team=' . $key ?>">
@@ -19,10 +24,10 @@ require __DIR__ . '/data.php';
                 </a>
 
                 <h2><?php echo $key ?></h2>
+                <p><?php echo $country; ?></p>
+                <p><?php echo $value['city'] ?></p>
 
-                <p><?php echo "City: " . $value['city'] ?></p>
-
-                <a href="<?php echo $value['url'] ?>">Website</a>
+               
 
             </div>
         <?php endforeach; ?>

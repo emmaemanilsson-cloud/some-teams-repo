@@ -10,7 +10,6 @@
 --font-size-l: 32px;
 --font-size-xl: 48px;
 
-
 }
 
 *{
@@ -29,6 +28,10 @@ h1 {
     font-size: var(--font-size-l);
 }
 
+h3 {
+    text-decoration: underline;
+}
+
 p {
     color: var(--text-color);
     line-height: 1.9;
@@ -39,6 +42,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0px 32px 48px 32px;
+    border-bottom: solid 0,5 var(--border-color);
 }
 
 .heading {
@@ -52,7 +56,6 @@ header {
 
     gap: var(--font-size-m);
     color: var(--text-color);
-
 }
 
 .link {
@@ -61,14 +64,7 @@ header {
     border-radius: var(--font-size-s);
   
     border: solid 0.5px;
-
 }
-
-ul {
-    list-style-type: none;
-    line-height: 1.9;
-}
-
 
 .teams-container {
     display: grid;
@@ -76,12 +72,11 @@ ul {
     gap: var(--font-size-l);
     max-width: 1200px;
     margin-top: 32px;
-
 }
 
 .team-card {
     background-color: var(--accent-color);
-    padding: var(--font-size-l);
+    padding: 32px 16px 16px 16px;
     border-radius: var(--font-size-s);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.10);
     border: solid 2px var(--border-color);
@@ -91,21 +86,20 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }   
+
+.team-card p {
+    margin: 4px 12px;
+}
+
 
 .team-card img {
     width: 100px;
     height: 100px;
     object-fit: contain;
     margin: 0;
+}
     
-}
-
-.team-card > a:last-child {
-    align-self: center;
-
-}
 
 .team-link {
     border: none;
@@ -126,8 +120,7 @@ a {
     background-color: var(--background-color);
     border: solid 1px;
     padding: 8px;
-    border-radius: var(--font-size-s);
-    
+    border-radius: var(--font-size-s);  
 }
 
 a:hover {
@@ -173,3 +166,64 @@ img {
 
 }
 
+.team-profile {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profile-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+}
+
+.profile-heading h1 {
+    margin-bottom: var(--font-size-s);
+
+}
+
+.team-city {
+    margin-top: 0;
+    font-size: var(--font-size-m);
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+    background-color: var(--accent-color);
+    border: solid 2px var(--border-color);
+
+    width: 800px;
+    padding: var(--font-size-xl);
+    border-radius: var(--font-size-s);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.10);
+
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--font-size-m);
+    align-items: flex-start;
+
+}
+
+.profile-info p {
+    margin: 0;
+}
+
+.profile-logo {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.profile-logo img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}

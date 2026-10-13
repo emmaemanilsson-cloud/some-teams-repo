@@ -16,7 +16,6 @@ require __DIR__ . '/header.php';
         <br>
         In this project, I've focused on using PHP to present information about different teams in UEFA women's football. The goal has been to practice using PHP, HTML and CSS.
 
-     <!--In this project, I have focused on using PHP to present information about different football teams while also practicing HTML structure and CSS layout. The goal has been to put what I have learned into practice and become more confident in how the technologies work together. I am still at the beginning of my development journey, so every project is an opportunity to try new things, make mistakes, and learn more along the way.-->
         </p>
 
 
