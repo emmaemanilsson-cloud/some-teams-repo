@@ -1,12 +1,14 @@
-# some-teams-repo
+# Some Teams
 
+A simple website showcasing teams participating in the 2026/27 UEFA Women's Europa Cup.
 
-This is a ungraded small assignment in PHP 
+## Built With
+- PHP
+- HTML
+- CSS
 
-This projects focus on using PHP to present information about different teams from Women's UEFA fotball league.
+## About
+This project was created as part of my web development studies at Yrgo to practise PHP, HTML, CSS and Git.
 
-about
-how its made
-author
-
-
+## Author
+Created by me as my first individual PHP assignment.

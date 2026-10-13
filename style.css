@@ -28,10 +28,6 @@ h1 {
     font-size: var(--font-size-l);
 }
 
-h3 {
-    text-decoration: underline;
-}
-
 p {
     color: var(--text-color);
     line-height: 1.9;
@@ -41,8 +37,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 32px 48px 32px;
-    border-bottom: solid 0,5 var(--border-color);
+    padding: 0 32px 48px 32px;
+    border-bottom: solid 2px var(--border-color);
 }
 
 .heading {
@@ -139,7 +135,7 @@ img {
     gap: 64px;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 48px 32px 0px 32px;
+    padding: 48px 32px 0 32px;
 
 }
 
@@ -192,6 +188,7 @@ img {
 .profile-card {
     display: flex;
     align-items: center;
+    position: relative;
     gap: 48px;
 
     background-color: var(--accent-color);
@@ -209,11 +206,16 @@ img {
     flex-direction: column;
     gap: var(--font-size-m);
     align-items: flex-start;
-
 }
 
 .profile-info p {
-    margin: 0;
+    margin: 0; 
+}
+
+.back-link {
+    position: absolute;
+    top: 32px;
+    right: 24px;
 }
 
 .profile-logo {
