@@ -13,7 +13,7 @@ require __DIR__ . '/data.php';
 
 
             <?php foreach ($teams as $key => $value) : ?>
-                
+
                 <?php
                 //Remove the country from the league name by splitting at the opening parenthesis.
                 $country = explode('(', $value['league'])[1];
