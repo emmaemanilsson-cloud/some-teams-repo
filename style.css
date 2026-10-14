@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Inter', sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
     padding: var(--font-size-l);
@@ -42,7 +42,7 @@ header {
 }
 
 .heading {
-    font-family: 'carter one', sans-serif;
+    font-family: 'Carter One', sans-serif;
     font-size: 52px;
 }
 
@@ -84,6 +84,7 @@ header {
     text-align: center;
 }   
 
+
 .team-card p {
     margin: 4px 12px;
 }
@@ -94,6 +95,12 @@ header {
     height: 100px;
     object-fit: contain;
     margin: 0;
+}
+
+.team-card img:hover {
+    transform: scale(1.15);
+    transition: transform 0.2s ease;
+
 }
     
 
@@ -229,3 +236,5 @@ img {
     height: 180px;
     object-fit: contain;
 }
+
+
